@@ -1,0 +1,46 @@
+.no_bootstrap_grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.no_bootstrap_grid > div {
+  width: 100%;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.no_bootstrap_grid > div:not(:last-child) {
+  margin-right: 25px;
+}
+
+.no_bootstrap_grid > div:nth-child(odd) {
+  background-color: palevioletred;
+}
+
+.bootstrap_grid .col div {
+  background-color: greenyellow;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.bootstrap_grid .col:nth-child(odd) div {
+  background-color: green;
+}
+
+section {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
